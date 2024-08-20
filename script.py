@@ -16,7 +16,7 @@ def descargarVideoComoMP3(url, download_path):
         audio_clip.write_audiofile(mp3_file)
         audio_clip.close()
         
-        os.remove(audio_file)  # Elimina el archivo original (video) 
+        os.remove(audio_file)  # Elimina el video, si se quiere conservar solo hay que borrar o comentar esta linea
         
         print(f"Descargado y convertido: {yt.title}")
     except Exception as e:
